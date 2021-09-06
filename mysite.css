@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* navigation column */
+/* ---------------------------- */
+#navbar ul{
+    display:flex;
+    font-size: 22px;
+    background-color: #00000075;
+    width: 100%;
+    position: fixed;
+    height: 70px;
+}
+
+#navbar::before{
+    content: "";
+    background: url(images/bkg2.jpg) no-repeat center center/cover;
+    position:absolute;    
+    height: 680px;
+    width: 100%;
+    z-index: -2;
+    opacity: 1;
+    
+}
+
+#navbar ul li{
+    list-style: none;
+    margin: 0px 15px;
+}
+
+#navbar ul li a{
+    display: block;
+    color:white;
+    margin: 16px;
+    padding: 8px;
+    text-decoration: none;
+    
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    
+}
+
+
+
+/* section/home column */
+/* ------------------------- */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 325px;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+}
+
+#home h1{
+    padding: 20px 0px;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+        
+}
+
+#home p{
+    padding: 5px 0px;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 16px;
+}
+
+.btn{
+    border: 2px solid rgb(255, 230, 0);
+    border-radius: 28px;
+    font-size: 16px;
+    margin-top: 15px;
+    width: 130px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0);       
+}
+
+.btn a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: black;
+    width: 200px;
+}
+
+
+/* SERVICES BLOCK */
+/* ------------------ */
+
+.h-primary {
+    font-size: 2.6rem;
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+}
+.h-secondary {
+    font-size: 2.2rem;
+    padding: 10px;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+
+.services-container{
+    background-image: url(images/bkg1.jpg);
+    height: 777px;
+    width: 100%;
+}
+
+#services{
+    margin: 20px;
+    display: flex;
+}
+#services .box1{
+    border: 2px solid black;
+    height: 500px;
+    padding: 30px;
+    margin: 34px;
+    border-radius: 70px;
+    background-color: #d3d3d39c;
+
+}
+#services .box1 img{
+    height: 250px;
+    margin: auto;
+    display: block;
+    border-radius: 40px;
+}
+
+#services .box1 p{
+    font-size: 16px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* STUDIO/ Infrastructure */
+/* ----------------------------- */
+
+#studio{
+    background: url(images/stud.jpg) no-repeat center center/cover;
+    height: 550px;
+    width: 100%;
+}
+.stud{
+    display: block;
+    border: 8px solid #2d095c49;
+    border-radius: 15px;
+    padding:5px;
+    margin: 100px 520px;
+    margin-top: 100px;
+}
+.stud p{
+    font-size: 22px;
+    font-family: 'Noto Serif', serif;
+}
+
+/* CONTACT SECTION */
+/* ----------------------------- */
+
+#contact{
+    position: relative;
+    height: 435px;
+    width: 100vw;
+    background: url(images/contact.jpg) no-repeat center center/cover;
+}
+
+form {
+    width: 100%;
+}
+
+
+#contact-box{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    /* padding-bottom: 35px; */
+    padding-top: 50px;
+}
+
+
+
+#contact-box .form-group input{
+    height: 40px;
+    width: 380px;
+    margin: 10px;
+    text-align: center;
+    border-bottom: 2px solid rgb(111 243 223 / 71%);
+    border-radius: 20px;
+    background: none;
+    margin-left: 10px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.btn0{
+    border: 2px solid rgba(139, 243, 229, 0.76);
+    width: 130px;
+    height: 40px;
+    margin: 10px 140px; 
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.336); 
+}
+
+.btn0 a{
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+}
+
+.btn0:hover{
+    background-color: black;
+    color: rgba(139, 243, 229, 0.76);
+}
+
+input::placeholder{
+    color: rgba(139, 243, 229, 0.76);
+}
+
+footer{
+    background: black;
+    width: 100%;
+    color: white;
+    padding: 10px 0px;
+}
